@@ -2,9 +2,7 @@ import pandas as pd
 import mysql.connector
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import os  # ✅ to print and open file path
-
-# Download the VADER lexicon
+import os 
 nltk.download('vader_lexicon')
 
 # Fetch data from the MySQL database
@@ -29,7 +27,6 @@ except Exception as e:
     print("❌ Failed to load data:", e)
     exit()
 
-# Initialize sentiment analyzer
 sia = SentimentIntensityAnalyzer()
 
 def calculate_sentiment(review):
@@ -75,10 +72,8 @@ customer_reviews_df['SentimentCategory'] = customer_reviews_df.apply(
     lambda row: categorize_sentiment(row['SentimentScore'], row['Rating']), axis=1)
 customer_reviews_df['SentimentBucket'] = customer_reviews_df['SentimentScore'].apply(sentiment_bucket)
 
-# Print results
 print(customer_reviews_df.head())
 
-# ✅ Save and show file location
 output_file = 'fact_customer_reviews_.csv'
 print("📁 Saving to:", os.path.abspath(output_file))
 customer_reviews_df.to_csv(output_file, index=False)
