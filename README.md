@@ -1,6 +1,7 @@
 # Business Analysis - Data Analytics Project
 
 Interactive Dashboard built by using Power Bi.
+
 Used SQL and Python for ETL, data cleaning and data modelling.
 
 
