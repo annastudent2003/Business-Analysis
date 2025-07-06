@@ -6,6 +6,6 @@
 
 ![image alt](https://github.com/annastudent2003/Business-Analysis/blob/12858b4b786a31c460c5b2ff6d72db273fd017d6/Dashboard/Power%20Bi%20Dashboard_page-0002.jpg)
 
-![image alt]()
+![image alt](https://github.com/annastudent2003/Business-Analysis/blob/b71ca06b41bd52013f9c6210369b827eb405c02e/Dashboard/Power%20Bi%20Dashboard_page-0003.jpg)
 
 ![image alt]()
